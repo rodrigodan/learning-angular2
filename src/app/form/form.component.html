@@ -1,0 +1,21 @@
+<form (submit)="onSubmit()">
+  <div class="form-group">
+
+    <label for="Author">Author</label>
+    <input name="author" type="text" [(ngModel)]="article.author" class="form-control" id="Author" placeholder="Insert the author name">
+
+    <label for="Content">Content</label>
+    <input name="content" type="text" [(ngModel)]="article.content" class="form-control" id="Content" placeholder="Insert the Content">
+
+    <label for="date">Published Date</label>
+    <input name="date" type="date" [(ngModel)]="article.date" class="form-control" id="date" placeholder="02/12/2020">
+
+    <label for="Title">Title</label>
+    <textarea name="title" [(ngModel)]="article.title" class="form-control" id="Title" rows="3"></textarea>
+
+    <br />
+
+    <button type="submit" class="button button2">Send</button>
+  </div>
+
+</form>
